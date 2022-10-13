@@ -1,9 +1,16 @@
 import torch
 import torch.nn as nn
+from config import cfg
+
+nz = cfg["Z_dim"]
+ngpu = cfg["num_gpus"]
+ngf = cfg["generator_depth"]
+nc = cfg["img_channels"]
+ndf = cfg["discriminator_depth"]
 
 
 class Generator(nn.Module):
-    def __init__(self, ngpu, nz, ngf, nc):
+    def __init__(self):
         super(Generator, self).__init__()
         self.ngpu = ngpu  # number of GPUs available
         # since he feeds the input in as a convolution, he can put everything in a sequential model
@@ -46,7 +53,7 @@ class Generator(nn.Module):
 
 
 class Discriminator(nn.Module):
-    def __init__(self, ngpu, nc, ndf):
+    def __init__(self):
         super(Discriminator, self).__init__()
         self.ngpu = ngpu
         self.main = nn.Sequential(

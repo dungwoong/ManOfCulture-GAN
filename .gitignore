@@ -1,3 +1,5 @@
 .idea/*
 venv/*
 data/*
+*.pyc
+ANIME_DCGAN/.ipynb_checkpoints/*

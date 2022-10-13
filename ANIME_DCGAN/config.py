@@ -10,4 +10,4 @@ cfg["opt_lr"] = 0.0002
 cfg["adam_beta1"] = 0.5
 cfg["batch_size"] = 64
 cfg["workers"] = 5
-cfg["date_root"] = "../data/anime"
+cfg["data_root"] = "../data/anime"
