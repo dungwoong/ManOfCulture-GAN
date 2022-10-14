@@ -9,3 +9,8 @@ There's 3 things that I want to try
  1. Basic DCGAN[DONE]
  2. ProGAN[Not Done]
  3. Original model idea[coming later]
+
+## Basic DCGAN
+Uses this [DCGAN tutorial](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html], and applied the model to my own dataset.
+ 
+[A short writeup by me, doesn't go very in-depth](https://medium.com/@dungwoong/generating-human-faces-with-dcgans-7a4d54eaa89b)
